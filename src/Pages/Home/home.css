@@ -1,0 +1,88 @@
+.home-container{
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  /* background: radial-gradient(ellipse at center, #fffeea 0%, #fffeea 35%, #b7e8eb 100%);
+  background-size: contain;
+  overflow: hidden; */ 
+  /* animation: scroll 200s linear infinite;
+  background: url("../../assets/wood.jpg"), #111111;
+  background-size: cover;
+  color: #eee;
+  height: 100vh;
+  min-width: 360px;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  z-index:-1000; */
+    
+}
+.text-container{
+    position: relative;
+    top: 40%;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+ .name{
+    animation: bounceInUp 2s;
+}
+p:nth-child(2){
+  
+    animation: bounceInUp 3s;
+}
+p:nth-child(3){
+    animation: bounceInUp 4s;
+}
+.about-link{
+    position: absolute;
+    bottom: 15%;
+    cursor: pointer;
+    z-index: 1;
+    left: 50%;
+    display: inline-block;
+    font-size: 2rem;
+    transform: translateX(-50%);
+}
+.page_red{
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   top: 0%;
+   background-color: #4DA5AB;
+   transform: scaleX(0)
+}
+.page_blue{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  background-color: rgb(6, 123, 158);
+  transform: scaleX(0)
+}
+.page_black{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  background-color: rgb(4, 87, 112);
+  transform: scaleX(0)
+}
+
+@keyframes scroll {
+    100%{
+     background-position:0px -3000px;
+   }
+ }
+ 
+ @media (prefers-reduced-motion) {
+   .wrapper {
+     animation: scroll 200s linear infinite;
+   }
+ }
+ 
+ @media (min-width: 670px) {
+   .title {
+     font-size: 5rem;
+   }
+ }

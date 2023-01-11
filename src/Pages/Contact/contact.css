@@ -1,0 +1,78 @@
+.contact-container{
+    background-color: rgb(4, 87, 112); 
+}
+form{
+    position: relative;
+    top: 15% ;
+    width: 50%;
+    height: 80%;
+    margin: 5% auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: -2px 2px 15px 5px #062770;
+    perspective: 600px;
+    z-index: 1;
+}
+    input{
+        background-color: antiquewhite;
+        width: 60%;
+        margin: 5% 0;
+        padding: 2% 10px;
+        border-radius: 10px;
+    }
+    input:focus{
+            
+            outline: 2px solid lightblue;
+        }
+    input:valid{
+            outline: 2px solid rgb(6, 235, 6);
+            background-color: transparent;
+        }
+        
+     textarea{
+            background-color: antiquewhite;
+            width: 60%;
+            height: 30%;
+            padding: 2% 10px;
+            border-radius: 10px;
+            height: clamp(30%,50%,300px);
+            margin-bottom: 10px;
+           
+            
+            
+        }
+        .form-button{
+            padding: 2%;
+            width: 20%;
+            background: transparent;
+            border: none;
+            position: relative;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .btn-text{
+            color: white;
+            mix-blend-mode: difference;
+            animation: bounceIn 0.5s ease-in;
+        }
+        button::before{
+            width:25%;
+            height: 100%;
+            position: absolute;
+            content: '';
+            top:0;
+            left:0;
+            background-color: hsl(200,100%,50%);
+            border-radius: 50px;
+            transition: all 0.5s ease;
+            
+        }
+         button:hover::before{
+           
+            width: 100%;
+            background-color: hsl(200,100%,50%);
+          
+         }

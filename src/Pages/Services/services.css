@@ -1,0 +1,26 @@
+.services-container{
+    /* height: 100%; */
+    width: 100vw;
+    position: relative;
+    z-index: 1;
+}
+.service{
+    /* padding: 5%; */
+    height: 30%;
+    
+    border: 1px solid #88888840;
+    width: 50vw;
+    border-radius: 10px;
+    margin: 5% auto;
+    animation: fadeInUp 2s ease-in;
+}
+.service > h3 {
+    margin-top : 5%;
+    font-weight: 600;
+    
+}
+.service > img{
+    width: 20%;
+    height: 20%;
+    margin: 2%;
+}

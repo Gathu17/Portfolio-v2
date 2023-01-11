@@ -1,0 +1,11 @@
+.name-container {
+    position:relative;
+    width: 20vw;
+    z-index: 1;
+    height: 10%;
+    margin-left: 4%;
+}
+svg{
+    font-weight: bold;
+    height: 50%;
+}

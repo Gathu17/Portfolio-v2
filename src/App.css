@@ -1,0 +1,58 @@
+#root {
+  text-align: center;
+  background-color: rgb(4, 87, 112);
+  color: white;
+}
+
+.ham {
+  cursor: pointer;
+  height: 5%;
+  padding: 0%;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.line {
+  fill:none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke:#000;
+  stroke-width:5.5;
+  stroke-linecap:round;
+}
+.ham4 .top {
+  stroke-dasharray: 40 121;
+}
+.ham4 .bottom {
+  stroke-dasharray: 40 121;
+}
+.ham4.active .top {
+  stroke-dashoffset: -68px;
+}
+.ham4.active .bottom {
+  stroke-dashoffset: -68px;
+}
+.navbar-container{
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  width: 100vw;  
+  height: 3em;
+  line-height: 1em;
+  box-shadow: 0px 2px 5px 2px #808080;
+  background-color: #81dde288;
+  z-index: 1000;
+}
+.navbar-logo{
+  color: black;
+  margin-left: 1%;
+  font-size: 1.5em;
+  font-weight: bold;
+}

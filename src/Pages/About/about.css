@@ -1,0 +1,33 @@
+.about-container{ 
+    z-Index: 1;
+    height: 100vh;
+    /* position: relative; */
+}
+.about-text{
+    position: relative;
+    width: 70vh;
+    margin: 0 auto;
+    top: 10%;
+    color:aliceblue;
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    line-height: 1.8rem;
+}
+.about-skills{
+    position:relative;
+    /* top: 40%; */
+    margin-top: 15%;
+    width: 100%;  
+    z-index: 1;
+}
+.icons-skills{
+    margin-top: 5%; 
+    z-index: 1;
+}
+.icon{
+    margin: 20px;
+    padding: 2%; 
+    border-radius: 40%;
+    box-shadow: 1px 1px 2px 2px #808080;
+    background-color: white;
+}
