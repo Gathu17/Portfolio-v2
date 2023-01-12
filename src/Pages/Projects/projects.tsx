@@ -8,7 +8,7 @@ import Cimg from '../../assets/coverly.png'
 import Pimg from '../../assets/portfolio.png'
 import {gsap} from 'gsap'
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
-import {FaGithub} from 'react-icons/fa'
+import {FaGithub,FaLink} from 'react-icons/fa'
 
 const Projects = () => {
   function projectSlider() {
@@ -33,7 +33,7 @@ const Projects = () => {
     projectSlider()
   })
   return (
-    <div className="projects-container">
+    <div className="projects-container" id="projects-container">
       <h2 style={{marginBottom:"5%"}}>Some of the projects that I've worked on</h2>
    
     <div className="slide-container">
@@ -43,7 +43,7 @@ const Projects = () => {
                 <div className="info">
                    <h3>Review app</h3> 
                    <p>A review app where users can login and upload or update documents that can be reviewed and approved by committee/person </p>
-                   <span className="btn-link"><FaGithub color="black" size="1em"/><a href="https://github.com/">GITHUB</a></span>
+                   <div style={{display:"flex",alignItems: "center"}}><span className="btn-link"><FaGithub color="black" size="1em"/><a href="https://github.com/DocReview">GITHUB</a></span><span style={{marginLeft: "2%"}}><a href="https://Coverly.app" target="_blank"><FaLink size="1.5em"/></a></span></div>
                 </div>
                </div>
                <div className="slide _2">
@@ -51,7 +51,7 @@ const Projects = () => {
                 <div className="info">
                    <h3 >E-commerce app</h3> 
                    <p>An online store web app built with MERN stack where users can login and add products to cart and checkout..</p> 
-                   <span className="btn-link"><FaGithub color="black" size="1em"/><a href="https://github.com/">GITHUB</a></span>
+                   <div style={{display:"flex",alignItems: "center"}}><span className="btn-link"><FaGithub color="black" size="1em"/><a href="https://github.com/E-commerce-client">GITHUB</a></span><span style={{marginLeft: "2%"}}><a href="https://Coverly.app" target="_blank"><FaLink size="1.5em"/></a></span></div>
                 </div>
                 
                </div>
@@ -60,7 +60,7 @@ const Projects = () => {
                 <div className="info">
                    <h3>Coverly app</h3> 
                    <p>An app that generates coverletters from resumes using GPT-3. Contributed as a backend developer and lead DevOps engineer.</p>
-                   <span className="btn-link"><FaGithub color="black" size="1em"/><a href="https://github.com/">GITHUB</a></span>
+                   <div style={{display:"flex",alignItems: "center"}}><span className="btn-link"><FaGithub color="black" size="1em"/><a href="#">GITHUB</a></span><span style={{marginLeft: "2%"}}><a href="https://Coverly.app" target="_blank"><FaLink size="1.5em"/></a></span></div>
                 </div>
                </div>
                <div className="slide _4">
@@ -68,8 +68,8 @@ const Projects = () => {
                 <div className="info">
                    <h3>Portfolio</h3> 
                    <p>This is my previous portfolio built using React, GSAP and Sass</p>
-                   <span className="btn-link"><FaGithub color="black" size="1em"/><a href="https://github.com/">GITHUB</a></span>
-                </div>
+                   <div style={{display:"flex",alignItems: "center"}}><span className="btn-link"><FaGithub color="black" size="1em"/><a href="https://github.com/my-portfolio">GITHUB</a></span><span style={{marginLeft: "2%"}}><a href="https://Coverly.app" target="_blank"><FaLink size="1.5em"/></a></span>
+                </div></div>
                 
                </div>
                <div className="slide _5">
@@ -77,7 +77,7 @@ const Projects = () => {
                 <div className="info">
                    <h3>Social app</h3> 
                    <p>A posting app built with Reactjs and GraphQl API that fetches data from MongoDB. The app was styled with semantic-ui.</p>
-                   <span className="btn-link"><FaGithub color="black" size="1em"/><a href="https://github.com/">GITHUB</a></span>
+                   <div style={{display:"flex",alignItems: "center"}}><span className="btn-link"><FaGithub color="black" size="1em"/><a href="https://github.com/Social-server">GITHUB</a></span><span style={{marginLeft: "2%"}}><a href="https://Coverly.app" target="_blank"><FaLink size="1.5em"/></a></span></div>
                 </div>
                </div>
 
@@ -87,7 +87,7 @@ const Projects = () => {
                 <div className="info">
                  <h3>API app</h3> 
                    <p>A guessing game app built with HTML, CSS, and JavaScript and fetches data from different APIs.</p>
-                  <span className="btn-link"><FaGithub color="black" size="1em"/><a href="https://github.com/">GITHUB</a></span>
+                  <div style={{display:"flex",alignItems: "center"}}><span className="btn-link"><FaGithub color="black" size="1em"/><a href="https://github.com/">GITHUB</a></span><span style={{marginLeft: "2%"}}><a href="https://Coverly.app" target="_blank"><FaLink size="1.5em"/></a></span></div>
                    
                 </div>
                </div>

@@ -46,7 +46,7 @@ const Home = ({handleSlide}:slideProps):JSX.Element => {
 //   },3000)
 // })
   return (
-    <div className="home-container">
+    <div className="home-container" id="home-container">
       <BackGround/>
         <div className="text-container">
           <p >Hi there!</p>  
@@ -54,7 +54,7 @@ const Home = ({handleSlide}:slideProps):JSX.Element => {
         <p > I'm </p>
             <Name/>
        </div>
-        <p>a Full-stack Javascript Developer.</p>
+        <p>a full-stack Javascript Developer.</p>
        </div> 
        
        <div onClick={handleSlide} >

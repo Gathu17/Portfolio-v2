@@ -37,7 +37,9 @@ const Layout = () => {
     
  },1)
    tl.to(window,{
-    duration: 1, scrollTo: {y: "#about-container"}
+    duration: 1, scrollTo: {y: "#about-container"},
+    onStart: () => { document.documentElement.style.scrollBehavior = "auto"; },
+    onComplete: () => { document.documentElement.style.scrollBehavior = "smooth"; }
    })
     tl.set(pageRed,{
       scaleX: 0

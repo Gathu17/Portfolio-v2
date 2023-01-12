@@ -42,7 +42,7 @@ const Contact = () => {
        }
   
   return (
-    <div className="contact-container">
+    <div className="contact-container" id="contact-container">
       <h2 style={{fontSize:"2rem",fontWeight:"bold" }}>Connect with me</h2>
                <p style={{width:"70%",margin:"auto"}}>
                 Interested in working with me? Shoot me a textbelow and I'll get back to you as soon as I can.

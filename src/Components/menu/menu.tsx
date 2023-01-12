@@ -12,29 +12,29 @@ const Menu: React.FC<Props> = ({open})=> {
     <div className="menu" style={{ transform: `${open ? 'scale(5)' : 'scale(0)'}`}}>
       <ul className="list">
         <li className='list-items'>
-         <a href="#">Home</a>
+         <a href="#home-container">Home</a>
         </li>
         <li className='list-items'>
-         <a href="#">About me</a>
+         <a href="#about-container">About me</a>
         </li >
         <li className='list-items'>
-         <a href="#">Services</a>
+         <a href="#services-container">Services</a>
         </li>
         <li className='list-items'>
-         <a href="#">Projects</a>
+         <a href="#projects-container">Projects</a>
         </li>
         <li className='list-items'>
-         <a href="#">Contact</a>
+         <a href="#contact-container">Contact</a>
         </li>
         <li className='list-items'>
-         <a href="#">My blogs</a>
+         <a href="https://jerryg.hashnode.dev" target="_blank">My blogs</a>
         </li>
       </ul>
       <span className="oval"></span>
       <ul className="menu-icons">
-         <li><FaGithub/></li>
-         <li><FaLinkedin/></li>
-         <li><FaTwitter/></li>
+         <li><a href="https://github.com/Gathu17"><FaGithub/></a></li>
+         <li><a href="https://www.linkedin.com/in/jerry-gathu-7b527a1b2/"><FaLinkedin/></a></li>
+         <li><a href="https://twitter.com/jerry_script"><FaTwitter/></a></li>
       </ul>
     </div>
   )

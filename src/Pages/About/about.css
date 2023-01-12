@@ -1,7 +1,8 @@
-.about-container{ 
+#about-container{ 
     z-Index: 1;
     height: 100vh;
     /* position: relative; */
+    
 }
 .about-text{
     position: relative;
