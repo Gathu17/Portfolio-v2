@@ -50,8 +50,12 @@ body{
 }
 .menu-icons{
     display: flex;
+    justify-content: space-around;
     float: right;
     list-style: none;
-    margin-right: 2%;
+    margin-right: 15%;
     margin-top: 1%;
+}
+.menu-icons > li {
+    margin-right: 5%;
 }
