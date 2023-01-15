@@ -1,6 +1,4 @@
-body{
-    scroll-behavior: smooth;
-}
+
 .menu{
     position: absolute;
     top: 0;
@@ -20,16 +18,38 @@ body{
 .list{
     position: absolute;
     list-style: none;
-    
+    color: green;
+    font-weight: bolder;
     left: 10%;
     padding: 0;
     margin: 0;
     
 }
 .list-items{
+    position: relative;
     margin: 0;
+    color: green;
     padding: 0 0;
     line-height: 1em;
+    transition: all 0.5s ease-in;
+}
+.list-items::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid aqua;
+    width: 0%;
+    z-index: 2000; 
+    transition: all 0.5s ease-in;
+}
+.list-items > a:hover{
+    color: aqua !important;
+    transition: all 0.2s ease-in;
+}
+.list-items:hover::after{
+    width: 100%;
+    transition: all 0.3s ease-in;
 }
 .menu > ul > li > a{
     text-decoration: none;
@@ -58,4 +78,7 @@ body{
 }
 .menu-icons > li {
     margin-right: 5%;
+}
+.menu-icons > li > a:hover{
+    color: aqua;
 }

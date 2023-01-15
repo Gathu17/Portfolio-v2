@@ -15,36 +15,24 @@ type slideProps = {
   ref?: React.MutableRefObject<null>
 }
 
-const Home = ({handleSlide}:slideProps):JSX.Element => {
+const Home : React.FC = ({handleSlide}:slideProps):JSX.Element => {
   const waveRef = useRef<HTMLInputElement>(null)
   
 
-  function wave(){
-    var tl = gsap.timeline();
-    tl.fromTo(waveRef.current,{
-    
-    scale: 0.2,
-    },{
-     opacity: 1,
-     scale: 1,
-     ease: "elastic.inOut",
-     duration: 2,
-     transformOrigin: "50% 50%",
-     onComplete: () => waveRef.current?.classList.add('wave')
-  })
+  function disableScroll() {
 
+    // Get the current page scroll position
+   let scrollTop =
+     document.documentElement.scrollTop;
+   let scrollLeft =
+     document.documentElement.scrollLeft
+  
+      
+        window.addEventListener("scroll",()=>{
+          console.log(scrollLeft, scrollTop);
+        })
 }
-// function handleSlide(){
-//   let tl = gsap.timeline({defaults: {duration: 1.5}})
-//   tl.to('.home-container',{
-//      y:"-100%"
-//   })
-// }
-// useEffect(()=>{
-//   setTimeout(()=>{
-//     wave()
-//   },3000)
-// })
+
   return (
     <div className="home-container" id="home-container">
       <BackGround/>

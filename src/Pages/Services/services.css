@@ -3,6 +3,7 @@
     width: 100vw;
     position: relative;
     z-index: 1;
+    /* margin-top: 5%; */
 }
 .service{
     /* padding: 5%; */

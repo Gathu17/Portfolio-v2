@@ -9,3 +9,11 @@ svg{
     font-weight: bold;
     height: 50%;
 }
+@media only screen and (max-width: 540px) {
+    .name-container{
+        width:50vw;
+    }
+    svg{
+        height: 100%;
+    }
+}

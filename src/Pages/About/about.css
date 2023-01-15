@@ -1,12 +1,13 @@
 #about-container{ 
     z-Index: 1;
     height: 100vh;
-    /* position: relative; */
+    position: relative;
+    width: 100vw;
     
 }
 .about-text{
     position: relative;
-    width: 70vh;
+    width: 50vw;
     margin: 0 auto;
     top: 10%;
     color:aliceblue;
@@ -18,12 +19,14 @@
     position:relative;
     /* top: 40%; */
     margin-top: 15%;
-    width: 100%;  
+    width: 100vw;  
     z-index: 1;
+    
 }
 .icons-skills{
     margin-top: 5%; 
     z-index: 1;
+   
 }
 .icon{
     margin: 20px;
@@ -31,4 +34,15 @@
     border-radius: 40%;
     box-shadow: 1px 1px 2px 2px #808080;
     background-color: white;
+}
+
+@media only screen and (max-width: 540px) {
+    .about-text{
+        width: 80vw;
+    }
+    .about-skills{
+        bottom: -8%;
+    }
+    
+    
 }

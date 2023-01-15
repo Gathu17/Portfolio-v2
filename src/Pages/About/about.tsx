@@ -74,8 +74,8 @@ const [isVisible, setIsVisible] = useState(false);
             />
             <motion.div
                 style={{
-                    width: 600,
-                    height: 150,
+                    width: window.innerWidth <= 500 ? 200 : 600,
+                    height: window.innerWidth <= 500 ? 120 : 150,
                     borderRadius: 30,
                     overflow: "hidden",
                     // marginLeft: 200,
@@ -88,7 +88,7 @@ const [isVisible, setIsVisible] = useState(false);
             >
                 <motion.div
                     style={{
-                        height: 150,
+                        height: window.innerWidth <= 500 ? 120 : 150,
                         width: getWidth(items),
                         x: scrollX
                     }}
@@ -103,7 +103,7 @@ const [isVisible, setIsVisible] = useState(false);
                             <motion.div
                                 style={{
                                     width: width,
-                                    height: 150,
+                                    height: window.innerWidth <= 500 ? 120 : 150,
                                     borderRadius: 20,
                                     backgroundColor: "#fff",
                                     display: "flex",

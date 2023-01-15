@@ -21,7 +21,7 @@ body {
   justify-content: center;
   align-items: center; */
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   perspective: 1000px;
   perspective-origin: 50% 50%;
