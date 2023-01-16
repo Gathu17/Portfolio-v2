@@ -58,12 +58,13 @@ span > a{
 @media only screen and (max-width: 540px) {
     .projects-container{
         height: 100%;
-        transform: translate(0px,500px) !important;
+        margin-top: 10%;
+        transform: translate(0px,0px) !important;
     }
     .projects-container > h2{
         width: 70vw;
         margin:  auto;
-        
+        margin-top: 10%;
     }
     .slide-container{
         width: 300vw;

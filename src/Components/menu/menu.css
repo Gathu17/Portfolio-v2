@@ -23,7 +23,8 @@
     left: 10%;
     padding: 0;
     margin: 0;
-    
+    display: flex;
+    flex-direction: column;
 }
 .list-items{
     position: relative;
@@ -81,4 +82,27 @@
 }
 .menu-icons > li > a:hover{
     color: aqua;
+}
+@media only screen and (max-width: 540px){
+    .menu{
+        width: 16%;
+        height: 15vh;
+    }
+    .list{
+        height: 50%;
+    }
+    .list-items{
+       line-height: 0.6em;
+    }
+    .menu > ul > li > a{
+        font-size: 0.4rem;
+        
+    }
+    .menu-icons{
+        margin-right: 5%;
+        margin-top: 0%;
+    }
+    .oval{
+        rotate: 20deg;
+    }
 }
