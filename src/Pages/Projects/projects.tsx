@@ -50,7 +50,7 @@ const Projects = () => {
                <img src={Emg} alt='s'style={{width: '100%', height: '100%'}}  />
                 <div className="info">
                    <h3 >E-commerce app</h3> 
-                   <p>An online store web app built with MERN stack where users can login and add products to cart and checkout..</p> 
+                   <p>An online store web app built with MERN stack where users can login, filter and add products to cart and checkout with stripe..</p> 
                    <div style={{display:"flex",alignItems: "center"}}><span className="btn-link"><FaGithub color="black" size="1em"/><a href="https://github.com/E-commerce-client">GITHUB</a></span><span style={{marginLeft: "2%"}}><a href="https://Coverly.app" target="_blank"><FaLink size="1.5em"/></a></span></div>
                 </div>
                 
