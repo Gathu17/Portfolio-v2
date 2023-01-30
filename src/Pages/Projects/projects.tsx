@@ -42,7 +42,8 @@ const Projects = () => {
                 <img src={Dimg}  alt='s'style={{width: '100%', height: '100%'}}  />
                 <div className="info">
                    <h3>Review app</h3> 
-                   <p>A review app where users can login and upload or update documents that can be reviewed and approved by committee/person </p>
+                   <p>A review app where users can login and upload or update documents that can be reviewed and approved by committee/person <br/>
+                     Login:(name: Jane, email: glitexuser2@gmail.com) </p>
                    <div style={{display:"flex",alignItems: "center"}}><span className="btn-link"><FaGithub color="black" size="1em"/><a href="https://github.com/DocReview">GITHUB</a></span><span style={{marginLeft: "2%"}}><a href="https://Coverly.app" target="_blank"><FaLink size="1.5em"/></a></span></div>
                 </div>
                </div>
@@ -50,7 +51,7 @@ const Projects = () => {
                <img src={Emg} alt='s'style={{width: '100%', height: '100%'}}  />
                 <div className="info">
                    <h3 >E-commerce app</h3> 
-                   <p>An online store web app built with MERN stack where users can login, filter and add products to cart and checkout with stripe..  Login:(name: Jerry, password: 123456)</p> 
+                   <p>An online store web app built with MERN stack where users can login, filter and add products to cart and checkout with stripe.. <br/>  Login:(name: Jerry, password: 123456)</p> 
                    <div style={{display:"flex",alignItems: "center"}}><span className="btn-link"><FaGithub color="black" size="1em"/><a href="https://github.com/E-commerce-client">GITHUB</a></span><span style={{marginLeft: "2%"}}><a href="https://Coverly.app" target="_blank"><FaLink size="1.5em"/></a></span></div>
                 </div>
                 
