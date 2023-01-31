@@ -10,12 +10,12 @@ import About from '../../util/waveLetter/waveLetters'
 import Animate from '../../util/animateLetters'
 
 
-type slideProps = {
-  handleSlide?: (event: React.MouseEvent<Element, MouseEvent>) => void
+type Props = {
+  handleSlide: (event: React.MouseEvent<Element>) => void
   ref?: React.MutableRefObject<null>
 }
 
-const Home : React.FC = ({handleSlide}:slideProps):JSX.Element => {
+const Home : React.FC<Props> = ({handleSlide}):JSX.Element => {
   const waveRef = useRef<HTMLInputElement>(null)
   
 
