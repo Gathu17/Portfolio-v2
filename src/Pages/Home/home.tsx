@@ -11,7 +11,7 @@ import Animate from '../../util/animateLetters'
 
 
 type Props = {
-  handleSlide: (event: React.MouseEvent<Element>) => void
+  handleSlide?: (event: React.MouseEvent<Element>) => void
   ref?: React.MutableRefObject<null>
 }
 
