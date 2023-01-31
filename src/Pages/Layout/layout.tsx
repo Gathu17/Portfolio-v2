@@ -8,11 +8,12 @@ import Footer from '../../Components/Footer/footer'
 import {gsap} from 'gsap'
 import {ScrollToPlugin} from 'gsap/dist/ScrollToPlugin'
 
-type slide = () => void;
 
-const Layout = () => {
+
+const Layout: React.FC = () => {
   const slideRef = useRef<null>(null)
-  function handleSlide(){
+
+  function handleSlide (event: React.MouseEvent<Element>){
     const pageRed =  document.querySelector(".page_red")
     const pageBlue =  document.querySelector(".page_blue")
     const pageBlack =  document.querySelector(".page_black")
@@ -51,14 +52,12 @@ const Layout = () => {
       scaleX: 0
     })
     
-  //   tl.to('.about-container',{
-  //     y:"-100%"
-  //  })
+  
   }
 
   return (
     <div >
-      <Home  handleSlide={handleSlide} />
+      <Home  handleSlide={handleSlide}/>
       <About/>
       <Services/>
       <Projects/>
