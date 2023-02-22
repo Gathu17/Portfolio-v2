@@ -104,5 +104,6 @@
     }
     .oval{
         rotate: 20deg;
+        scale: 0.5;
     }
 }
