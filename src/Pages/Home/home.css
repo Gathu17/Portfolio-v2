@@ -20,15 +20,16 @@
     position: relative;
     top: 40%;
     font-size: 2rem;
+    color:rgb(170, 214, 243);
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 10%;
 }
  .name{
     animation: bounceInUp 2s;
 }
 p:nth-child(2){
-  
     animation: bounceInUp 3s;
 }
 p:nth-child(3){
@@ -84,5 +85,10 @@ p:nth-child(3){
  @media (min-width: 670px) {
    .title {
      font-size: 5rem;
+   }
+ }
+ @media only screen and (max-width: 950px){
+   .text-container{
+    top: 20%
    }
  }

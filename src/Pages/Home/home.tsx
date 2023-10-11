@@ -38,14 +38,14 @@ const Home : React.FC<Props> = ({handleSlide}):JSX.Element => {
       <BackGround/>
         <div className="text-container">
           <p >Hi there!</p>  
-      <div className="name" style={{display: "flex",alignItems:"center",justifyContent: "space-between"}}> 
+      <div className="name" style={{display: "flex",alignItems:"center",justifyContent: "space-between", padding: "0"}}> 
         <p > I'm </p>
             <Name/>
        </div>
         <p>a full-stack Javascript Developer.</p>
        </div> 
        
-       <div onClick={handleSlide} >
+       <div style={{position: "absolute",bottom: "2%", left: "50%"}} onClick={handleSlide} >
         <About />
         </div>
         

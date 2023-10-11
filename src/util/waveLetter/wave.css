@@ -1,9 +1,9 @@
 .letters {
-  position: absolute;
+  /* position: absolute; */
   display: flex;
   margin-top: 0.6em;
-  bottom : 5%;
-  left: 50%;
+  /* bottom : 0%; */
+  /* left: 50%; */
   font-size: 2rem;
   transform: translateX(-50%)
 }

@@ -38,6 +38,9 @@ transform: translate(0px,0px) !important;
 .info:hover{
     transform: translateY(-110%);
 }
+.info > p{
+    font-size: 0.8em;
+}
 .btn-link{
     border-radius: 10px;
     width: 20%;
@@ -75,4 +78,9 @@ span > a{
     .info{
         transform: translateY(-25%)
     }
+@media only screen and (max-width: 950px){
+    .info-text{
+        font-size: 0.1rem;
+    }
+}
 }

@@ -44,7 +44,7 @@ const Projects = () => {
                    <h3>Review app</h3> 
                    <p>A review app where users can login and upload or update documents that can be reviewed and approved by committee/person <br/>
                      Login:(name: Jane, email: glitexuser2@gmail.com) </p>
-                   <div style={{display:"flex",alignItems: "center"}}><span className="btn-link"><FaGithub color="black" size="1em"/><a href="https://github.com/DocReview">GITHUB</a></span><span style={{marginLeft: "2%"}}><a href="https://Coverly.app" target="_blank"><FaLink size="1.5em"/></a></span></div>
+                   <div style={{display:"flex",alignItems: "center"}}><span className="btn-link"><FaGithub color="black" size="1em"/><a href="https://github.com/DocReview">GITHUB</a></span><span style={{marginLeft: "2%"}}><a href="https://doc-review.netlify.app" target="_blank"><FaLink size="1.5em"/></a></span></div>
                 </div>
                </div>
                <div className="slide _2">
@@ -52,7 +52,7 @@ const Projects = () => {
                 <div className="info">
                    <h3 >E-commerce app</h3> 
                    <p>An online store web app built with MERN stack where users can login, filter and add products to cart and checkout with stripe.. <br/>  Login:(name: Jerry, password: 123456)</p> 
-                   <div style={{display:"flex",alignItems: "center"}}><span className="btn-link"><FaGithub color="black" size="1em"/><a href="https://github.com/E-commerce-client">GITHUB</a></span><span style={{marginLeft: "2%"}}><a href="https://Coverly.app" target="_blank"><FaLink size="1.5em"/></a></span></div>
+                   <div style={{display:"flex",alignItems: "center"}}><span className="btn-link"><FaGithub color="black" size="1em"/><a href="https://github.com/E-commerce-client">GITHUB</a></span><span style={{marginLeft: "2%"}}><a href="https://myduka.netlify.app" target="_blank"><FaLink size="1.5em"/></a></span></div>
                 </div>
                 
                </div>
@@ -69,7 +69,7 @@ const Projects = () => {
                 <div className="info">
                    <h3>Portfolio</h3> 
                    <p>This is my previous portfolio built using React, GSAP and Sass</p>
-                   <div style={{display:"flex",alignItems: "center"}}><span className="btn-link"><FaGithub color="black" size="1em"/><a href="https://github.com/my-portfolio">GITHUB</a></span><span style={{marginLeft: "2%"}}><a href="https://Coverly.app" target="_blank"><FaLink size="1.5em"/></a></span>
+                   <div style={{display:"flex",alignItems: "center"}}><span className="btn-link"><FaGithub color="black" size="1em"/><a href="https://github.com/my-portfolio">GITHUB</a></span><span style={{marginLeft: "2%"}}><a href="https://jerrygathu.netlify.app" target="_blank"><FaLink size="1.5em"/></a></span>
                 </div></div>
                 
                </div>
@@ -78,7 +78,9 @@ const Projects = () => {
                 <div className="info">
                    <h3>Social app</h3> 
                    <p>A posting app built with Reactjs and GraphQl API that fetches data from MongoDB. The app was styled with semantic-ui.</p>
-                   <div style={{display:"flex",alignItems: "center"}}><span className="btn-link"><FaGithub color="black" size="1em"/><a href="https://github.com/Social-server">GITHUB</a></span><span style={{marginLeft: "2%"}}><a href="https://Coverly.app" target="_blank"><FaLink size="1.5em"/></a></span></div>
+                   <div style={{display:"flex",alignItems: "center"}}><span className="btn-link"><FaGithub color="black" size="1em"/><a href="https://github.com/Social-server">GITHUB</a></span><span style={{marginLeft: "2%"}}>
+                    {/* <a href="https://Coverly.app" target="_blank"><FaLink size="1.5em"/></a> */}
+                    </span></div>
                 </div>
                </div>
 
@@ -86,9 +88,9 @@ const Projects = () => {
                
                <img src={Amg} alt='s'style={{width: '100%', height: '100%'}}  />   
                 <div className="info">
-                 <h3>API app</h3> 
-                   <p>A guessing game app built with HTML, CSS, and JavaScript and fetches data from different APIs.</p>
-                  <div style={{display:"flex",alignItems: "center"}}><span className="btn-link"><FaGithub color="black" size="1em"/><a href="https://github.com/">GITHUB</a></span><span style={{marginLeft: "2%"}}><a href="https://Coverly.app" target="_blank"><FaLink size="1.5em"/></a></span></div>
+                 <h3 >API app</h3> 
+                   <p className='info-text'>A guessing game app built with HTML, CSS, and JavaScript and fetches data from different APIs.</p>
+                  <div style={{display:"flex",alignItems: "center"}}><span className="btn-link"><FaGithub color="black" size="1em"/><a href="https://github.com/Gathu17/Api-s">GITHUB</a></span><span style={{marginLeft: "2%"}}><a href="https://myapis.netlify.app" target="_blank"><FaLink size="1.5em"/></a></span></div>
                    
                 </div>
                </div>
