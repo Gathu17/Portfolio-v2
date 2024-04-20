@@ -6,6 +6,7 @@ import Smg from '../../assets/Simg.png'
 import Dimg from '../../assets/doc-review.png'
 import Cimg from '../../assets/coverly.png'
 import Pimg from '../../assets/portfolio.png'
+import Chessimg from '../../assets/chess.png'
 import {gsap} from 'gsap'
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
 import {FaGithub,FaLink} from 'react-icons/fa'
@@ -42,7 +43,7 @@ const Projects = () => {
                 <img src={Dimg}  alt='s'style={{width: '100%', height: '100%'}}  />
                 <div className="info">
                    <h3>Review app</h3> 
-                   <p>A review app where users can login and upload or update documents that can be reviewed and approved by committee/person <br/>
+                   <p>A review app where users can login and upload or update documents that can be reviewed. <br/>
                      Login:(name: Jane, email: glitexuser2@gmail.com) </p>
                    <div style={{display:"flex",alignItems: "center"}}><span className="btn-link"><FaGithub color="black" size="1em"/><a href="https://github.com/DocReview">GITHUB</a></span><span style={{marginLeft: "2%"}}><a href="https://doc-review.netlify.app" target="_blank"><FaLink size="1.5em"/></a></span></div>
                 </div>
@@ -51,7 +52,7 @@ const Projects = () => {
                <img src={Emg} alt='s'style={{width: '100%', height: '100%'}}  />
                 <div className="info">
                    <h3 >E-commerce app</h3> 
-                   <p>An online store web app built with MERN stack where users can login, filter and add products to cart and checkout with stripe.. <br/>  Login:(name: Jerry, password: 123456)</p> 
+                   <p>An online store web app built with MERN stack where users can login, filter and add products to cart. <br/>  Login:(name: Jerry, password: 123456)</p> 
                    <div style={{display:"flex",alignItems: "center"}}><span className="btn-link"><FaGithub color="black" size="1em"/><a href="https://github.com/E-commerce-client">GITHUB</a></span><span style={{marginLeft: "2%"}}><a href="https://myduka.netlify.app" target="_blank"><FaLink size="1.5em"/></a></span></div>
                 </div>
                 
@@ -90,6 +91,16 @@ const Projects = () => {
                 <div className="info">
                  <h3 >API app</h3> 
                    <p className='info-text'>A guessing game app built with HTML, CSS, and JavaScript and fetches data from different APIs.</p>
+                  <div style={{display:"flex",alignItems: "center"}}><span className="btn-link"><FaGithub color="black" size="1em"/><a href="https://github.com/Gathu17/Api-s">GITHUB</a></span><span style={{marginLeft: "2%"}}><a href="https://myapis.netlify.app" target="_blank"><FaLink size="1.5em"/></a></span></div>
+                   
+                </div>
+               </div>
+               <div className="slide _6">
+               
+               <img src={Chessimg} alt='s'style={{width: '100%', height: '100%'}}  />   
+                <div className="info">
+                 <h3 >Chess bot</h3> 
+                   <p className='info-text'>A web app for playing chess with option to play against a computer.</p>
                   <div style={{display:"flex",alignItems: "center"}}><span className="btn-link"><FaGithub color="black" size="1em"/><a href="https://github.com/Gathu17/Api-s">GITHUB</a></span><span style={{marginLeft: "2%"}}><a href="https://myapis.netlify.app" target="_blank"><FaLink size="1.5em"/></a></span></div>
                    
                 </div>
