@@ -23,11 +23,11 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   margin: auto;
 }
 .text-container > * {
-  margin-bottom: 4%;
+  margin-bottom: 2%;
 }
 .name {
   animation: bounceInUp 2s;
@@ -94,7 +94,7 @@ p:nth-child(3) {
 }
 @media only screen and (max-width: 950px) {
   .text-container {
-    top: 40%;
+    top: 30%;
   }
   .text-container > * {
     margin-bottom: 2%;

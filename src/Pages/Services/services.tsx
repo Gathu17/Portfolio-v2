@@ -1,9 +1,9 @@
 import React,{useEffect,useRef,useState} from 'react'
 import './services.css'
 import 'animate.css';
-import Design from '../../assets/blank_canvas.svg'
+import Draw from '../../assets/blank_canvas.svg'
 import Develop from '../../assets/programmer.svg'
-import Devices from '../../assets/AI.svg'
+import Design from '../../assets/draw.svg'
 import Deploy from '../../assets/maker_launch.svg'
 import gsap from 'gsap';
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
@@ -17,20 +17,20 @@ const Services = () => {
 
   const services = [
     {
+      image: Design,
+      title: "Web Design",
+      description: "I create visually stunning and user-friendly website designs that leave lasting impressions. Using modern design principles and tools like Figma, I craft responsive layouts that perfectly balance aesthetics with functionality. From wireframes to final UI/UX designs, I ensure your website not only looks great but also delivers an exceptional user experience."
+    },
+    {
       image: Develop,
       title: "Web development",
       description: "From dynamic landing pages to full-stack applications, I craft robust web solutions. I specialize in building feature-rich, scalable applications that combine stunning design with powerful functionality to deliver exceptional user experiences."
     },
     {
-      image: Devices,
+      image: Deploy,
       title: "Web deployment",
       description: "I ensure your applications are deployed securely and efficiently in the cloud using containerization best practices. My deployment pipeline includes robust CI/CD integration with Jenkins, comprehensive application monitoring, and performance optimization tools. This ensures your application runs smoothly in production while maintaining peak performance and reliability."
-    },
-    {
-      image: Deploy,
-      title: "IoT development",
-      description: "I bridge the physical and digital worlds through innovative IoT solutions. Leveraging my expertise in sensor technology and real-time communication protocols like MQTT, I develop sophisticated APIs and intuitive user interfaces that enable seamless device integration and control. Whether it's monitoring systems or automated solutions, I bring smart technology to life."
-    }
+    },   
   ];
  
   return (
