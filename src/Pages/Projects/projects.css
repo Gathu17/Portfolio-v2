@@ -11,7 +11,7 @@ transform: translate(0px,0px) !important;
 }
 .slide-container{
     display: flex;
-    width: 200vw;
+    width: 300vw;
     height: 100vh;
     transform: translate(0px,0px);
 }

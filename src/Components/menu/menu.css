@@ -19,7 +19,7 @@
     position: absolute;
     list-style: none;
     color: green;
-    font-weight: bolder;
+    font-weight: 500;
     left: 10%;
     padding: 0;
     margin: 0;
@@ -30,8 +30,6 @@
     position: relative;
     margin: 0;
     color: green;
-    padding: 0 0;
-    line-height: 1em;
     transition: all 0.5s ease-in;
 }
 .list-items::after{
@@ -52,21 +50,26 @@
     width: 100%;
     transition: all 0.3s ease-in;
 }
-.menu > ul > li > a{
+.menu > ul > li > a {
     text-decoration: none;
     color: white;
     font-size: 0.5rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    padding: 0.5em 0;
+    display: block;
 }
 .oval {
     position: absolute;
-    width: 10%;
-    height: 50%;
+    width: 8%;    
+    height: 40%;    
     background: hsl(186, 95%, 85%);
-    opacity: 0.7;
+    opacity: 0.5;
     border-radius: 50%;
-    top: 15%;
-    right: 15%;
-    rotate: 25deg;
+    top: 20%;     
+    right: 15%;    
+    rotate: 15deg;
     perspective: 150px;
 }
 .menu-icons{
@@ -92,11 +95,10 @@
         height: 50%;
     }
     .list-items{
-       line-height: 0.6em;
+       line-height: 0.5em;
     }
     .menu > ul > li > a{
         font-size: 0.4rem;
-        
     }
     .menu-icons{
         margin-right: 5%;
@@ -105,5 +107,15 @@
     .oval{
         rotate: 20deg;
         scale: 0.5;
+    }
+}
+/* Add larger screen breakpoint */
+@media only screen and (min-width: 1024px) {
+    .menu > ul > li > a {
+        font-size: 1rem;
+    }
+    
+    .menu-icons > li > a {
+        font-size: 1.2rem;
     }
 }

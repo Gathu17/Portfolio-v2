@@ -17,3 +17,11 @@ svg{
         height: 100%;
     }
 }
+@media only screen and (max-width: 950px) {
+    .name-container{
+        width:40vw;
+    }
+    svg{
+        height: 100%;
+    }
+}

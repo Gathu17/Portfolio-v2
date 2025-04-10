@@ -1,14 +1,14 @@
 #about-container{ 
     z-Index: 1;
     height: 120vh;
-    position: relative;
+    /* position: relative; */
     width: 100vw;
-    
+    margin-top: 20%;
 }
 .about-text{
-    position: relative;
-    width: 50vw;
-    margin: 0 auto;
+    /* position: relative; */
+    width: 70vw;
+    margin: 50px auto;
     top: 10%;
     color:aliceblue;
     font-size: 2rem;

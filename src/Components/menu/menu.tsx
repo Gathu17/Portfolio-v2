@@ -7,7 +7,6 @@ interface Props {
   open: boolean;
 }
 const Menu: React.FC<Props> = ({open})=> {
-  console.log(open)
   return (
     <div className="menu" style={{ transform: `${open ? 'scale(5)' : 'scale(0)'}`}}>
       <ul className="list">

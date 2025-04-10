@@ -1,15 +1,15 @@
 import React, { useEffect, PointerEvent,useState } from 'react'
-import {FaReact,FaNodeJs,FaSass,FaDocker} from 'react-icons/fa'
-import {SiTypescript,SiMongodb,SiApollographql,SiAzuredevops,SiExpress} from 'react-icons/si'
+import {FaReact,FaNodeJs,FaSass,FaDocker, FaPhp,FaVuejs,FaAws, FaFigma} from 'react-icons/fa'
+import {SiTypescript,SiMongodb,SiApollographql,SiAzuredevops,SiExpress,SiMysql} from 'react-icons/si'
 import { FcLinux } from "react-icons/fc";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import './about.css'
 
 
 const style = {}
-const items = [<FaReact color="blue" size="2.5em" style={{margin:"auto"}}/>,<FaNodeJs color="blue" size="2.5em" style={{margin:"auto"}}/>,<FaSass color="blue" size="2.5em" style={{margin:"auto"}}/>, <FaDocker color="blue" size="2.5em" style={{margin:"auto"}}/>, 
-<SiTypescript color="blue" size="2.5em" style={{margin:"auto"}}/>,<SiMongodb color="blue" size="2.5em" style={{margin:"auto"}}/>, <SiApollographql color="blue" size="2.5em" style={{margin:"auto"}}/>,<SiAzuredevops color="blue" size="2.5em" style={{margin:"auto"}}/>];
-const names = ["React","Nodejs","Sass","Docker","Typescript","MongoDB","GraphQl","DevOps"]
+const items = [<FaReact color="blue" size="2.5em" style={{margin:"auto"}}/>,<FaVuejs color="blue" size="2.5em" style={{margin:"auto"}}/>,<FaNodeJs color="blue" size="2.5em" style={{margin:"auto"}}/>,<FaPhp color="blue" size="2.5em" style={{margin:"auto"}}/>,<FaSass color="blue" size="2.5em" style={{margin:"auto"}}/>, <FaDocker color="blue" size="2.5em" style={{margin:"auto"}}/>, 
+<SiTypescript color="blue" size="2.5em" style={{margin:"auto"}}/>,<SiMysql color="blue" size="2.5em" style={{margin:"auto"}}/>,<SiMongodb color="blue" size="2.5em" style={{margin:"auto"}}/>, <SiApollographql color="blue" size="2.5em" style={{margin:"auto"}}/>,<FaAws color="blue" size="2.5em" style={{margin:"auto"}}/>,<FaFigma color="blue" size="2.5em" style={{margin:"auto"}}/>];
+const names = ["React","Vuejs","Nodejs","PHP","Sass","Docker","Typescript","MySQL","MongoDB","GraphQl","AWS","Figma"]
 const width = 80;
 const padding = 10;
 const size = 150;
@@ -30,10 +30,10 @@ const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        console.log(isVisible)
+        console.log(entry);
+        
         if (entry.isIntersecting) {
           setIsVisible(true);
-          console.log('about')
           observer.disconnect();
         }
       });
@@ -49,12 +49,11 @@ const [isVisible, setIsVisible] = useState(false);
   return (
     <div className="about-container" id="about-container" style={{opacity: isVisible ? 1 : 0,transform: isVisible ? "translateY(0px)": "translateY(-5%)",transition: 'all 0.5s ease-in',}}>
         <p className="about-text">
-            I build visually-appealing, authentic and expeditious web apps for 
-        all your business needs. I also possess a background in electronics that allows
-        me to proficiently engineer IoT software solutions.
+        Meet a digital architect who transforms business challenges into elegant web solutions. With over two years of hands-on development experience, I'm not just a coder – I'm a creative problem-solver who thrives on crafting innovative web solutions across different industries.
+        I specialize in building custom digital experiences that don't just work – they propel businesses forward, combining clean code with creative thinking to turn your vision into reality.
         </p>
         <div className="about-skills">
-          <h2 style={{color:"white"}}>Some of the tools I use </h2>
+          <h2 className='text-2xl mb-3'>Some of the tools I use </h2>
          <div className="icon-skills" >
            <motion.div
                 style={{

@@ -3,12 +3,12 @@
     width: 100vw;
     position: relative;
     z-index: 1;
-    /* margin-top: 5%; */
+    margin-bottom: 5%;
 }
 .service{
     /* padding: 5%; */
     height: 30%;
-    
+    padding: 2%;
     border: 1px solid #88888840;
     width: 50vw;
     border-radius: 10px;
@@ -23,5 +23,5 @@
 .service > img{
     width: 20%;
     height: 20%;
-    margin: 2%;
+    margin: auto;
 }
