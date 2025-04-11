@@ -1,19 +1,42 @@
-.services-container{
-    /* height: 100%; */
+.services-container {
     width: 100vw;
     position: relative;
     z-index: 1;
-    margin-bottom: 5%;
+    margin-top: 15vh;  
+    padding: 2rem 1rem;
+    overflow-x: hidden;
 }
-.service{
-    /* padding: 5%; */
-    height: 30%;
-    padding: 2%;
+
+.service {
+    padding: 2rem 1.5rem;
     border: 1px solid #88888840;
-    width: 50vw;
+    width: 90vw; 
     border-radius: 10px;
-    margin: 5% auto;
+    margin: 2rem auto;
     animation: fadeInUp 2s ease-in;
+}
+
+/* Responsive adjustments */
+@media screen and (min-width: 768px) {
+    .services-container {
+        margin-top: 10vh;
+    }
+
+    .service {
+        width: 50vw;
+        margin: 5% auto;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .services-container {
+        margin-top: 40vh;
+    }
+}
+
+/* Ensure proper spacing when About section is present */
+#about-container + .services-container {
+    margin-top: 40vh;
 }
 .service > h3 {
     margin-top : 5%;
