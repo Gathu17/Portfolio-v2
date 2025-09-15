@@ -6,13 +6,15 @@ import "animate.css";
 import { gsap } from "gsap";
 import { useRef } from "react";
 import Name from "../../Components/name/name";
-import About from "../../util/waveLetter/waveLetters";
+import About from "../../Components/aboutButton";
+// import About from "../../util/waveLetter/waveLetters";
 import Animate from "../../util/animateLetters";
 import WaveText from "../../Components/WaveAnimation";
 import WaveTypewriter from "../../Components/WaveAnimation";
 import { FaArrowDown, FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import resumePDF from "../../assets/jerrygathucv.pdf";
+import { bubbleCursor } from "../../util/cursorEffect";
 
 type Props = {
   handleSlide?: (event: React.MouseEvent<Element>) => void;
@@ -20,22 +22,30 @@ type Props = {
 };
 
 const Home: React.FC<Props> = ({ handleSlide }): JSX.Element => {
-  const waveRef = useRef<HTMLInputElement>(null);
+  const homeRef = useRef<HTMLDivElement>(null);
 
-  function disableScroll() {
-    // Get the current page scroll position
-    let scrollTop = document.documentElement.scrollTop;
-    let scrollLeft = document.documentElement.scrollLeft;
+  // Initialize bubble cursor effect
+  useEffect(() => {
+    let bubbleEffect: any;
 
-    window.addEventListener("scroll", () => {
-    });
-  }
+    if (homeRef.current) {
+      bubbleEffect = bubbleCursor({
+        element: homeRef.current,
+      });
+    }
+
+    // Cleanup function
+    return () => {
+      if (bubbleEffect && bubbleEffect.destroy) {
+        bubbleEffect.destroy();
+      }
+    };
+  }, []);
 
   const titles = [
     "a Full Stack Developer",
     "a DevOps Engineer",
     "a Creative Developer",
-    "an Innovator",
   ];
 
   const scrollToContact = () => {
@@ -46,55 +56,65 @@ const Home: React.FC<Props> = ({ handleSlide }): JSX.Element => {
   };
 
   return (
-    <div className="home-container" id="home-container">
+    <div className="home-container" id="home-container" ref={homeRef}>
       <BackGround />
 
-      <div className="text-container md:mb-[2%]">
-        <p>Hi there!</p>
-        <div
-          className="name"
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            padding: "0",
-          }}
-        >
-          <p> I'm </p>
-          <Name />
-        </div>
-        <p>
-          <WaveTypewriter
-            texts={titles}
-            className="text-3xl font-bold"
-            speed={80}
-            delay={2500}
-          />
-        </p>
-
-        <div className="cta-buttons">
-          <button className="hire-button" onClick={scrollToContact}>
-            Hire Me
-          </button>
-          <a
-            href={resumePDF}
-            download="JerryGathu_Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="resume-button"
+      {/* Content wrapper with blurred background */}
+      <div className="content-wrapper">
+        <div className="text-container md:mb-[2%]">
+          <p>Hi there!</p>
+          <div
+            className="name"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "10px",
+              padding: "0",
+              flexWrap: "wrap",
+            }}
           >
-            View Resume
-          </a>
-        </div>
-      </div>
+            <p style={{ margin: "0", whiteSpace: "nowrap" }}> I'm </p>
+            <Name />
+          </div>
+          <p>
+            <WaveTypewriter
+              texts={titles}
+              className="text-3xl font-bold"
+              speed={80}
+              delay={2500}
+            />
+          </p>
 
-      <div
-        className="scroll-indicator"
-        style={{ position: "absolute", bottom: "2%", left: "50%" }}
-        onClick={handleSlide}
-      >
-        <FaArrowDown className="text-3xl text-teal-300 animate-pulse mb-4" />
-        <About />
+          <div className="cta-buttons">
+            <button className="hire-button" onClick={scrollToContact}>
+              Hire Me
+            </button>
+            <a
+              href={resumePDF}
+              download="JerryGathu_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="resume-button"
+            >
+              View Resume
+            </a>
+          </div>
+        </div>
+
+        <div
+          className="scroll-indicator flex flex-col items-center m-auto"
+          style={{
+            left: "50%",
+            transform: "translateX(-50%)",
+            width: "auto",
+            minWidth: "120px",
+          }}
+          onClick={handleSlide}
+        >
+          <FaArrowDown className="text-lg text-teal-300 animate-pulse mb-2" />
+          {/* <About /> */}
+        </div>
       </div>
 
       <div className="slider"></div>

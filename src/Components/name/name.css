@@ -1,27 +1,44 @@
 .name-container {
-    position:relative;
-    width: 20vw;
-    z-index: 1;
-    height: 10%;
-    margin-left: 4%;
+  position: relative;
+  width: auto;
+  min-width: 200px;
+  max-width: 300px;
+  z-index: 1;
+  height: auto;
+  margin: 0;
+  flex-shrink: 0;
 }
-svg{
-    font-weight: bold;
-    height: 50%;
+svg {
+  font-weight: bold;
+  height: 60px;
+  width: 100%;
 }
+@media only screen and (max-width: 768px) {
+  .name-container {
+    min-width: 180px;
+    max-width: 250px;
+  }
+  svg {
+    height: 50px;
+  }
+}
+
 @media only screen and (max-width: 540px) {
-    .name-container{
-        width:50vw;
-    }
-    svg{
-        height: 100%;
-    }
+  .name-container {
+    min-width: 150px;
+    max-width: 200px;
+  }
+  svg {
+    height: 40px;
+  }
 }
-@media only screen and (max-width: 950px) {
-    .name-container{
-        width:40vw;
-    }
-    svg{
-        height: 100%;
-    }
+
+@media only screen and (max-width: 400px) {
+  .name-container {
+    min-width: 120px;
+    max-width: 160px;
+  }
+  svg {
+    height: 35px;
+  }
 }
